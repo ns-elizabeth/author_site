@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>N.S. Elizabeth</title>
+  <script>
+    // Encode the path and redirect to index.html with it as a query param.
+    // The SPA routing script in index.html will restore the correct URL.
+    var path = window.location.pathname;
+    var search = window.location.search;
+    var hash = window.location.hash;
+    window.location.replace('/?p=' + encodeURIComponent(path + search) + hash);
+  </script>
+</head>
+<body></body>
+</html>
